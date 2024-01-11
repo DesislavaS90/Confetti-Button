@@ -1,0 +1,33 @@
+.wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+body{
+    background-color: #000;
+}
+
+.confetti-button{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.75em 1.5em;
+    border: 0;
+    border-radius: 1.2em;
+    background: linear-gradient(90deg,#a8ff78 50%,#78ffd6);
+    cursor: pointer;
+}
+
+.confetti-button:hover{
+    transform:scale(1.1);
+}
+
+.wrapper canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
